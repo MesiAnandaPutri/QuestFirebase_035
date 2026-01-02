@@ -13,3 +13,15 @@ data class DetailSiswa(
     val alamat: String = "",
     val telpon: String = ""
 )
+
+fun DetailSiswa.toDataSiswa(): Siswa = Siswa(id, nama, alamat, telpon)
+fun Siswa.toDetailSiswa(): DetailSiswa = DetailSiswa(id, nama, alamat, telpon)
+
+data class UIStateSiswa(
+    val detailSiswa: DetailSiswa = DetailSiswa(),
+    val isEntryValid: Boolean = false
+)
+fun Siswa.toUiStateSiswa(isEntryValid: Boolean = false): UIStateSiswa = UIStateSiswa(
+    detailSiswa = this.toDetailSiswa(),
+    isEntryValid = isEntryValid
+)
