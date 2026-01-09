@@ -34,5 +34,19 @@ class DetailViewModel(
         getSatuSiswa()
     }
 
+    private fun getSatuSiswa() {
+        viewModelScope.launch {
+            statusUIDetail = StatusUIDetail.Loading
+            statusUIDetail = try {
+                val siswa = repositorySiswa.getSatuSiswa(idSiswa)
+                    ?: throw IOException("Data siswa tidak ditemukan")
+
+                StatusUIDetail.Success(satusiswa = siswa)
+            } catch (e: Exception) {
+                StatusUIDetail.Error
+            }
+        }
+    }
+
 
 }
