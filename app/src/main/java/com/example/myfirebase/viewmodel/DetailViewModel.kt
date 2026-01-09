@@ -27,5 +27,8 @@ class DetailViewModel(
         savedStateHandle.get<String>(DestinasiDetail.itemIdArg)?.toLong()
             ?: throw IllegalArgumentException("idSiswa tidak ditemukan di SavedStateHandle")
 
+    var statusUIDetail: StatusUIDetail by mutableStateOf(StatusUIDetail.Loading)
+        private set
+
 
 }
