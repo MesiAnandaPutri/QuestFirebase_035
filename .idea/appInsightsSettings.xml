@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.myfirebase" />
+                  <option name="mobileSdkAppId" value="1:899064688926:android:d41ac02a864e3e03dbd90f" />
+                  <option name="projectId" value="fir-kotlin-fab23" />
+                  <option name="projectNumber" value="899064688926" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
