@@ -15,3 +15,7 @@ PERTEMUAN 15
 5. TAMPILAN EDIT
    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9044a06a-d59b-4eae-8f76-39fbaaed31fc" />
 
+6. TAMPILAN HAPUS
+   <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a74d0dee-c533-4d59-9274-da6be333dd08" />
+
+
