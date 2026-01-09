@@ -21,5 +21,14 @@ fun EditSiswaScreen(
     modifier: Modifier = Modifier,
     viewModel: EditViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ) {
-
+    Scaffold(
+        topBar = {
+            SiswaTopAppBar(
+                title = stringResource(DestinasiEdit.titleRes),
+                canNavigateBack = true,
+                navigateUp = onNavigateUp
+            )
+        },
+        modifier = modifier
+    )
 }
